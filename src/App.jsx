@@ -1,0 +1,21 @@
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Home from './views/Home'
+import Form from './views/Form'
+
+
+
+function App() {
+
+  return (
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="form" element={<Form />} />
+        </Routes>
+      </BrowserRouter>
+    </>
+  )
+}
+
+export default App
